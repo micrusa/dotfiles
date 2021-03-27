@@ -1,0 +1,9 @@
+*
+!.gitignore
+!alacritty.yml
+!i3
+!i3/*
+!nitrogen
+!nitrogen/*
+!polybar
+!polybar/*
