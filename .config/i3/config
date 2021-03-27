@@ -223,7 +223,9 @@ exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec google-chrome
 exec discord
 exec idea
-exec xrandr --output HDMI-0 --primary --auto --left-of DVI-D-0
+
+#Set HDMI output as main screen at left of DVI output and default to 1920x1080@75Hz
+exec xrandr --output HDMI-0 -s 1920x1080 -r 75 --primary --auto --left-of DVI-D-0
 
 # Theme colors
 client.focused #e39866 #1e1e20 #e39866 #e39866 #e39866
