@@ -19,7 +19,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 hide_edge_borders both
-gaps inner 10
+gaps inner 15
 gaps outer 0
 
 # Custom keybinds
