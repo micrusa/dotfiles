@@ -25,8 +25,8 @@ gaps outer 0
 # Custom keybinds
 bindsym Print exec flameshot gui
 bindsym $mod+c exec code
-bindsym $mod+n exec google-chrome
-bindsym $mod+Shift+n exec google-chrome --incognito
+bindsym $mod+n exec chromium
+bindsym $mod+Shift+n exec chromium --incognito
 
 # Start program launcher (rofi)
 bindsym $mod+d exec --no-startup-id rofi -show run
@@ -148,7 +148,7 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
 # Custom workspace assignments
-assign [class="google-chrome"] $ws2
+assign [class="chromium"] $ws2
 assign [class="code"] $ws3
 assign [class="idea"] $ws3
 assign [class="discord"] $ws4
@@ -220,12 +220,12 @@ exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
-exec google-chrome
+exec chromium
 exec discord
 exec idea
 
-#Set HDMI output as main screen at left of DVI output and default to 1920x1080@75Hz
-exec xrandr --output HDMI-0 -s 1920x1080 -r 75 --primary --auto --left-of DVI-D-0
+# Run my boot script
+exec /home/micrusa/.config/autostart/scripts/boot.sh
 
 # Theme colors
 client.focused #e39866 #1e1e20 #e39866 #e39866 #e39866
