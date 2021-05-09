@@ -23,6 +23,7 @@ gaps inner 15
 gaps outer 0
 
 # Custom keybinds
+bindsym Print exec flameshot gui
 bindsym $mod+c exec code
 bindsym $mod+n exec google-chrome-stable
 bindsym $mod+Shift+n exec google-chrome-stable --incognito
@@ -222,7 +223,7 @@ exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec google-chrome-stable
 exec discord-canary
 exec idea
-exec /opt/magiccap/MagicCap
+exec flameshot
 
 # Run my boot script
 exec /home/micrusa/.config/autostart/scripts/boot.sh
