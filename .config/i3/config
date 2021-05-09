@@ -23,7 +23,6 @@ gaps inner 15
 gaps outer 0
 
 # Custom keybinds
-bindsym Print exec flameshot gui
 bindsym $mod+c exec code
 bindsym $mod+n exec google-chrome-stable
 bindsym $mod+Shift+n exec google-chrome-stable --incognito
