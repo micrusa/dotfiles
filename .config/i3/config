@@ -226,7 +226,8 @@ exec idea
 exec flameshot
 
 # Run my boot script
-exec /home/micrusa/.config/autostart/scripts/boot.sh
+#exec /home/micrusa/.config/autostart/scripts/boot.sh
+exec xinput set-prop "ELAN050D:01 04F3:315A Touchpad" "libinput Tapping Enabled" 1
 
 # Theme colors
 client.focused #e39866 #1e1e20 #e39866 #e39866 #e39866
