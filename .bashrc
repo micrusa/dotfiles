@@ -38,6 +38,11 @@ alias apti="sudo apt install -y"
 alias aptud="sudo apt update"
 alias aptu="sudo apt update && sudo apt upgrade"
 
+# Flutter & Dart
+alias fr="flutter run"
+alias dr="dart run"
+alias dbr="dart run build_runner watch --delete-conflicting-outputs"
+
 #########################################
 #					#
 #           END OF MY STUFF		#
