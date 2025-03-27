@@ -40,8 +40,14 @@ alias aptu="sudo apt update && sudo apt upgrade"
 
 # Flutter & Dart
 alias fr="flutter run"
+alias fpa="flutter pub add"
+alias fpg="flutter pub get"
+alias fpu="flutter pub upgrade"
 alias dr="dart run"
-alias dbr="dart run build_runner watch --delete-conflicting-outputs"
+alias drbr="dart run build_runner watch --delete-conflicting-outputs"
+
+# NPM Sucks
+alias npm="pnpm"
 
 #########################################
 #					#
@@ -195,3 +201,11 @@ export GOPATH=$HOME/go
 # Update PATH to include GOPATH and GOROOT binaries
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 export PATH="$HOME/development/flutter/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/micrusa/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
