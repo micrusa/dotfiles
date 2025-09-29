@@ -46,8 +46,8 @@ alias fpu="flutter pub upgrade"
 alias dr="dart run"
 alias drbr="dart run build_runner watch --delete-conflicting-outputs"
 
-# NPM Sucks
-alias npm="pnpm"
+# Zoxide
+eval "$(zoxide init bash)"
 
 #########################################
 #					#
@@ -209,3 +209,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/micrusa/.lmstudio/bin"
+# End of LM Studio CLI section
+
