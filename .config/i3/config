@@ -157,6 +157,7 @@ assign [class="whatsapp-desktop"] $ws4
 assign [class="telegram"] $ws4
 assign [class="WhatsApp"] $ws4
 assign [class="nautilus"] $ws5
+assign [class="spotify"] $ws5
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -219,9 +220,10 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --docky
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh --shapes
 exec zen
 exec flameshot
+exec spotify
 
 # Run my boot script
 exec /home/micrusa/.config/autostart/scripts/boot.sh
